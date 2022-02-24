@@ -3,7 +3,7 @@ import App from './learn/App.vue'
 // import AppMounted from '@/learn/AppMounted'
 // import CleanupDeps from './learn/CleanupDeps.vue'
 // import VueSet from './learn/VueSet.vue'
-// import Computed from './learn/Computed.vue'
+import Computed from './learn/Computed.vue'
 // import Watcher from './learn/Watcher.vue'
 // import SimpleWatcher from './learn/SimpleWatcher.vue'
 // import Update1 from './learn/update1/index.vue'
@@ -113,10 +113,10 @@ new Vue({
 }) */
 
 // Computed
-/* new Vue({
+new Vue({
   el: '#app',
   render: c => c(Computed)
-}) */
+})
 
 // watcher 实现原理
 /* new Vue({

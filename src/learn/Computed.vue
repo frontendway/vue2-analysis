@@ -9,7 +9,6 @@
 </template>
 
 <script>
-import Vue from 'vue'
 export default {
   data () {
     return {
@@ -21,7 +20,7 @@ export default {
   computed: {
     name () {
       if (this.useless > 0){
-        return this.firstName + this.lastName
+        return this.firstName + ':' + this.lastName
       }
       return 'please click change'
     }
