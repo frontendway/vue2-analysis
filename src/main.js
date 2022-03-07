@@ -1,14 +1,15 @@
 import Vue from 'vue'
-import App from './learn/App.vue'
+// import App from './learn/App.vue'
+// import Message from './components/Message.vue'
 // import AppMounted from '@/learn/AppMounted'
 // import CleanupDeps from './learn/CleanupDeps.vue'
 // import VueSet from './learn/VueSet.vue'
-import Computed from './learn/Computed.vue'
+// import Computed from './learn/Computed.vue'
 // import Watcher from './learn/Watcher.vue'
 // import SimpleWatcher from './learn/SimpleWatcher.vue'
 // import Update1 from './learn/update1/index.vue'
 // import Update2 from './learn/Update2.vue'
-// import Update3 from './learn/update3/index.vue'
+import Update3 from './learn/Update3.vue'
 // import Props from './learn/props/index.vue'
 // import Event from './learn/event/Index.vue'
 // import MoreKey from './learn/MoreKey.vue'
@@ -24,7 +25,10 @@ Vue.config.productionTip = false
 /* new Vue({
   el: '#app',
   data: {
-    mssage: 'hello vue'
+    info: 'hello vue'
+  },
+  components: {
+    Message
   }
 }) */
 
@@ -113,10 +117,10 @@ new Vue({
 }) */
 
 // Computed
-new Vue({
+/* new Vue({
   el: '#app',
   render: c => c(Computed)
-})
+}) */
 
 // watcher 实现原理
 /* new Vue({
@@ -130,7 +134,7 @@ new Vue({
   render: c => c(Watcher)
 }) */
 
-// 有子组件 diff 对比
+// 父组件 props 更新触发子组件更新
 /* new Vue({
   el: '#app',
   render: c => c(Update1)
@@ -142,11 +146,11 @@ new Vue({
   render: c => c(Update2)
 }) */
 
-// 只有子组件数据更新，父组件是否更新
-/* new Vue({
+// 新旧 vNode key 完全不同 diff 对比
+new Vue({
   el: '#app',
   render: c => c(Update3)
-}) */
+})
 
 // props 的规范化初始化
 /* new Vue({

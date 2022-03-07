@@ -1,6 +1,7 @@
 <template>
   <div>
     <button @click="clickHandle">btn</button>
+    {{a}}
   </div>
 </template>
 
@@ -9,7 +10,6 @@ export default {
   methods: {
     clickHandle () {
       console.log('child click')
-      this.$emit('select')
     }
   }
 }

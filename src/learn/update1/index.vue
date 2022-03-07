@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div>{{flag}}</div>
-    <Child :flag="flag" />
+    <Child :flag-id="flag" />
     <button @click="toggle">btn1</button>
   </div>
 </template>

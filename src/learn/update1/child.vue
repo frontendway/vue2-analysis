@@ -1,5 +1,5 @@
 <template>
-  <div v-if="flag">我是 div 标签</div>
+  <div v-if="flagId">我是 div 标签</div>
   <ul v-else>
     <li>我是 li 标签</li>
   </ul>
@@ -7,6 +7,6 @@
 
 <script>
 export default {
-  props: ['flag']
+  props: ['flagId']
 }
 </script>
