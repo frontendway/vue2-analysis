@@ -1,7 +1,6 @@
 <template>
   <div>
     <button @click="clickHandle">btn</button>
-    {{a}}
   </div>
 </template>
 

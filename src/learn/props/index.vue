@@ -32,7 +32,10 @@ export default {
   },
   methods: {
     change () {
+      // case 1
       this.msg.a = 2
+
+      // case 2
       this.msg = {
         c: 1,
         d: 2

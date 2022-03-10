@@ -9,7 +9,8 @@ import Vue from 'vue'
 // import SimpleWatcher from './learn/SimpleWatcher.vue'
 // import Update1 from './learn/update1/index.vue'
 // import Update2 from './learn/Update2.vue'
-import Update3 from './learn/Update3.vue'
+// import Update3 from './learn/Update3.vue'
+// import Update4 from './learn/Update4.vue'
 // import Props from './learn/props/index.vue'
 // import Event from './learn/event/Index.vue'
 // import MoreKey from './learn/MoreKey.vue'
@@ -140,17 +141,23 @@ new Vue({
   render: c => c(Update1)
 }) */
 
-// 无子组件当前组件 diff 对比
+// 当前组件无子组件 diff 对比
 /* new Vue({
   el: '#app',
   render: c => c(Update2)
 }) */
 
 // 新旧 vNode key 完全不同 diff 对比
-new Vue({
+/* new Vue({
   el: '#app',
   render: c => c(Update3)
-})
+}) */
+
+// v-for 无 key 删除问题 diff 对比
+/* new Vue({
+  el: '#app',
+  render: c => c(Update4)
+}) */
 
 // props 的规范化初始化
 /* new Vue({
@@ -164,7 +171,7 @@ new Vue({
   render: c => c(PropsWrap)
 }) */
 
-// test object props
+// 测试修改引用类型 props
 /* new Vue({
   el: '#app',
   render: c => c(ChangeProps)
@@ -196,8 +203,7 @@ new Vue({
 /* new Vue({
   el: '#app',
   render: c => c(ScopeSlot)
-})
-*/
+}) */
 
 // keep-alive 组件
 /* new Vue({
