@@ -18,7 +18,7 @@ import Vue from 'vue'
 // import Slot from './learn/slot/index.vue'
 // import ScopeSlot from './learn/scope-slot/index.vue'
 // import KeepLearn from './learn/keep-alive/index.vue'
-// import Tran from './learn/transition/index.vue'
+import Tran from './learn/transition/index.vue'
 // import ChangeProps from './learn/obj-props/index.vue'
 
 Vue.config.productionTip = false
@@ -212,7 +212,7 @@ new Vue({
 }) */
 
 // transition
-/* new Vue({
+new Vue({
   el: '#app',
   render: c => c(Tran)
-}) */
+})
