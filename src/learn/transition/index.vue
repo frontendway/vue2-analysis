@@ -15,6 +15,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <style>
@@ -22,6 +23,6 @@ export default {
   opacity: 0;
 }
 .fade-enter-active, .fade-leave-active{
-  transition: all 10s ease 0s;
+  transition: height 2s ease 0s, opacity 5s ease 0s, width 8s ease 0s;
 }
 </style>
