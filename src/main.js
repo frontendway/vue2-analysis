@@ -1,6 +1,6 @@
 import Vue from 'vue'
 // import App from './learn/App.vue'
-// import Message from './components/Message.vue'
+import Message from './components/Message.vue'
 // import AppMounted from '@/learn/AppMounted'
 // import CleanupDeps from './learn/CleanupDeps.vue'
 // import VueSet from './learn/VueSet.vue'
@@ -16,14 +16,14 @@ import Vue from 'vue'
 // import MoreKey from './learn/MoreKey.vue'
 // import VModel from './learn/VModel.vue'
 // import Slot from './learn/slot/index.vue'
-import ScopeSlot from './learn/scope-slot/index.vue'
+// import ScopeSlot from './learn/scope-slot/index.vue'
 // import KeepLearn from './learn/keep-alive/index.vue'
 // import Tran from './learn/transition/index.vue'
 // import ChangeProps from './learn/obj-props/index.vue'
 
 Vue.config.productionTip = false
 
-/* new Vue({
+new Vue({
   el: '#app',
   data: {
     info: 'hello vue'
@@ -31,7 +31,7 @@ Vue.config.productionTip = false
   components: {
     Message
   }
-}) */
+})
 
 // 组件化及生命周期函数执行
 /* new Vue({
@@ -200,10 +200,10 @@ new Vue({
 }) */
 
 // 作用域插槽
-new Vue({
+/* new Vue({
   el: '#app',
   render: c => c(ScopeSlot)
-})
+}) */
 
 // keep-alive 组件
 /* new Vue({
