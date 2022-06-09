@@ -1,43 +1,22 @@
 import Vue from 'vue'
-// import App from './learn/App.vue'
-import Message from './components/Message.vue'
-// import AppMounted from '@/learn/AppMounted'
-// import CleanupDeps from './learn/CleanupDeps.vue'
-// import VueSet from './learn/VueSet.vue'
-// import Computed from './learn/Computed.vue'
-// import Watcher from './learn/Watcher.vue'
-// import SimpleWatcher from './learn/SimpleWatcher.vue'
-// import Update1 from './learn/update1/index.vue'
-// import Update2 from './learn/Update2.vue'
-// import Update3 from './learn/Update3.vue'
-// import Update4 from './learn/Update4.vue'
-// import Props from './learn/props/index.vue'
-// import Event from './learn/event/Index.vue'
-// import MoreKey from './learn/MoreKey.vue'
-// import VModel from './learn/VModel.vue'
-// import Slot from './learn/slot/index.vue'
-// import ScopeSlot from './learn/scope-slot/index.vue'
-// import KeepLearn from './learn/keep-alive/index.vue'
-// import Tran from './learn/transition/index.vue'
-// import ChangeProps from './learn/obj-props/index.vue'
 
 Vue.config.productionTip = false
 
+// example
+/* import Example from './example.vue'
 new Vue({
   el: '#app',
-  data: {
-    info: 'hello vue'
-  },
-  components: {
-    Message
-  }
-})
+  render: c => c(Example)
+}) */
+
 
 // 组件化及生命周期函数执行
-/* new Vue({
+/* import App from './learn/App.vue'
+new Vue({
   el: '#app',
   render: h => h(App)
 }) */
+
 
 // 合并配置
 /* const childComp = {
@@ -64,8 +43,10 @@ new Vue({
   render: h => h(childComp)
 }) */
 
+
 // mounted 钩子函数合并到父组件
-/* new Vue({
+/* import AppMounted from '@/learn/AppMounted'
+new Vue({
   el: '#app',
   mounted () {
     console.log('root mounted')
@@ -73,12 +54,15 @@ new Vue({
   render: h => h(AppMounted)
 }) */
 
+
 // 组件注册
-/* Vue.component('app', App)
+/* import App from './learn/App.vue'
+Vue.component('app', App)
 new Vue({
   el: '#app',
   template: '<app></app>'
 }) */
+
 
 // 异步组件
 /* 
@@ -105,114 +89,151 @@ new Vue({
   render: h => h(App)
 }) */
 
+
 // 依赖收集与 cleanupDeps 与循环更新 bug demo
-/* new Vue({
+/* import CleanupDeps from './learn/CleanupDeps.vue'
+new Vue({
   el: '#app',
   render: c => c(CleanupDeps)
 }) */
 
+
 // Vue.set
-/* new Vue({
+/* import VueSet from './learn/VueSet.vue'
+new Vue({
   el: '#app',
   render: c => c(VueSet)
 }) */
 
+
 // Computed
-/* new Vue({
+/* import Computed from './learn/Computed.vue'
+new Vue({
   el: '#app',
   render: c => c(Computed)
 }) */
 
+
 // watcher 实现原理
-/* new Vue({
+/* import SimpleWatcher from './learn/SimpleWatcher.vue'
+new Vue({
   el: '#app',
   render: c => c(SimpleWatcher)
 }) */
 
+
 // 复杂 Watcher 实现原理
-/* new Vue({
+/* import Watcher from './learn/Watcher.vue'
+new Vue({
   el: '#app',
   render: c => c(Watcher)
 }) */
 
+
 // 父组件 props 更新触发子组件更新
-/* new Vue({
+/* import Update1 from './learn/update1/index.vue'
+new Vue({
   el: '#app',
   render: c => c(Update1)
 }) */
 
+
 // 当前组件无子组件 diff 对比
-/* new Vue({
+/* import Update2 from './learn/Update2.vue'
+new Vue({
   el: '#app',
   render: c => c(Update2)
 }) */
 
+
 // 新旧 vNode key 完全不同 diff 对比
-/* new Vue({
+/* import Update3 from './learn/Update3.vue'
+new Vue({
   el: '#app',
   render: c => c(Update3)
 }) */
 
+
 // v-for 无 key 删除问题 diff 对比
-/* new Vue({
+/* import Update4 from './learn/Update4.vue'
+new Vue({
   el: '#app',
   render: c => c(Update4)
 }) */
 
+
+// input 复用
+/* import Update5 from './learn/Update5.vue'
+new Vue({
+  el: '#app',
+  render: c => c(Update5)
+}) */
+
+
 // props 的规范化初始化
-/* new Vue({
+/* import Props from './learn/props/index.vue'
+new Vue({
   el: '#app',
   render: c => c(Props)
 }) */
 
-// 测试初始化 props，子组件修改 props 报错原理
-/* new Vue({
-  el: '#app',
-  render: c => c(PropsWrap)
-}) */
 
 // 测试修改引用类型 props
-/* new Vue({
+/* import ChangeProps from './learn/obj-props/index.vue'
+new Vue({
   el: '#app',
   render: c => c(ChangeProps)
 }) */
 
 // 自定义事件以及原生事件
-/* new Vue({
+/* import Event from './learn/event/Index.vue'
+new Vue({
   el: '#app',
   render: c => c(Event)
 }) */
 
-/* new Vue({
+
+/* import MoreKey from './learn/MoreKey.vue'
+new Vue({
   el: '#app',
   render: c => c(MoreKey)
 }) */
 
-/* new Vue({
+
+/* import VModel from './learn/VModel.vue'
+new Vue({
   el: '#app',
   render: c => c(VModel)
 }) */
 
+
 // 普通插槽
-/* new Vue({
+/* import Slot from './learn/slot/index.vue'
+new Vue({
   el: '#app',
   render: c => c(Slot)
 }) */
 
+
 // 作用域插槽
-/* new Vue({
+/* import ScopeSlot from './learn/scope-slot/index.vue'
+new Vue({
   el: '#app',
   render: c => c(ScopeSlot)
 }) */
 
+
 // keep-alive 组件
-/* new Vue({
+/* import KeepLearn from './learn/keep-alive/index.vue'
+new Vue({
   el: '#app',
   render: c => c(KeepLearn)
 }) */
 
+
 // transition
-/* new Vue({
+/* import Tran from './learn/transition/index.vue'
+new Vue({
   el: '#app',
   render: c => c(Tran)
 }) */
