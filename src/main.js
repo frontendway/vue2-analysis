@@ -170,6 +170,22 @@ new Vue({
 }) */
 
 
+// 父组件向子组件传递响应式对象、修改对象中的某个属性值、并不改变其引用地址
+// 父组件对比到子组件时、由于是内存地址未修改、子组件 props 被 setter 时、新旧地址一致直接 return
+/* import Update6 from './learn/update6'
+new Vue({
+  el: '#app',
+  render: c => c(Update6)
+}) */
+
+// 父组件并未访问 name 属性、所以 name 的 dep 并未收集到父组件的渲染 watcher、而子组件访问了 name、所以收集了子组件的渲染 watcher
+// 当 name 被修改时、dep 直接通知子组件 watcher 更新、父组件未做任何动作
+import Update7 from './learn/update7'
+new Vue({
+  el: '#app',
+  render: c => c(Update7)
+})
+
 // props 的规范化初始化
 /* import Props from './learn/props/index.vue'
 new Vue({
