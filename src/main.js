@@ -178,13 +178,15 @@ new Vue({
   render: c => c(Update6)
 }) */
 
+
 // 父组件并未访问 name 属性、所以 name 的 dep 并未收集到父组件的渲染 watcher、而子组件访问了 name、所以收集了子组件的渲染 watcher
 // 当 name 被修改时、dep 直接通知子组件 watcher 更新、父组件未做任何动作
-import Update7 from './learn/update7'
+/* import Update7 from './learn/update7'
 new Vue({
   el: '#app',
   render: c => c(Update7)
-})
+}) */
+
 
 // props 的规范化初始化
 /* import Props from './learn/props/index.vue'
@@ -200,6 +202,7 @@ new Vue({
   el: '#app',
   render: c => c(ChangeProps)
 }) */
+
 
 // 自定义事件以及原生事件
 /* import Event from './learn/event/Index.vue'
@@ -240,11 +243,11 @@ new Vue({
 
 
 // keep-alive 组件
-/* import KeepLearn from './learn/keep-alive/index.vue'
+import KeepLearn from './learn/keep-alive/index.vue'
 new Vue({
   el: '#app',
   render: c => c(KeepLearn)
-}) */
+})
 
 
 // transition
